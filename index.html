@@ -83,12 +83,62 @@ const Q=[
 ["health","健康飲食","選擇點心時，哪個做法較健康？",["注意營養標示與份量","只選糖分最高的","把點心當正餐","一次吃很多"],0,"閱讀標示並控制份量有助健康。"],
 ["health","身心健康","心情緊張時，哪個方法較適當？",["深呼吸並找可信任的人談談","破壞物品","責怪別人","一直忍住不求助"],0,"深呼吸與適當求助有助調整情緒。"]
 ].map(([s,u,q,o,a,e])=>({s,u,q,o,a,e}));
+Q.push(...[
+["chinese","字詞理解","「妹妹迫不及待地打開生日禮物。」句中的「迫不及待」表示什麼？",["非常期待，等不下去","完全沒有興趣","感到十分疲累","慢慢考慮"],0,"迫不及待形容心情急切，不能再等待。"],
+["chinese","成語運用","演講時只要加上一個精彩例子，就讓內容更加生動，可以用哪個成語？",["畫龍點睛","半途而廢","守株待兔","掩耳盜鈴"],0,"畫龍點睛比喻在關鍵處加上精彩內容。"],
+["chinese","句型練習","哪一句正確使用「只要……就……」？",["只要按時澆水，植物就能健康成長。","只要按時澆水，但是植物。","雖然按時澆水，就植物成長。","只要所以植物成長。"],0,"只要後面接條件，就後面接結果。"],
+["chinese","句型練習","哪一句正確使用「不但……而且……」？",["哥哥不但會游泳，而且會打籃球。","哥哥不但會游泳，所以打球。","哥哥雖然游泳，而且。","不但哥哥，但是打球。"],0,"不但與而且用來連接更進一層的內容。"],
+["chinese","閱讀理解","校園舉辦舊書交換活動，同學把讀過的書帶來分享，也挑選自己感興趣的書。這個活動最大的好處是什麼？",["讓書本繼續被閱讀","讓大家不必閱讀","把所有書丟掉","只比較書本價格"],0,"交換舊書能分享資源，也讓書繼續發揮價值。"],
+["chinese","閱讀理解","小如忘記帶直笛，同學主動借她一支備用直笛。從這件事可以看出同學具有哪種態度？",["樂於助人","粗心大意","半途而廢","斤斤計較"],0,"主動借出備用品是樂於助人的表現。"],
+["chinese","語文常識","人物直接說出的話，通常要使用哪種標點符號標示？",["引號","破折號","刪節號","間隔號"],0,"引號可標示人物直接說出的話。"],
+["chinese","語文常識","「妹妹的笑容像溫暖的陽光。」使用哪種修辭？",["譬喻","擬人","設問","排比"],0,"句中用像把笑容比作陽光，是譬喻。"],
+["math","多位數乘除","125 × 40 的答案是多少？",["500","5000","50000","165"],1,"125乘以4等於500，再乘以10得到5000。"],
+["math","多位數乘除","8400 ÷ 70 的答案是多少？",["12","120","1200","8370"],1,"8400除以70等於120。"],
+["math","四邊形","只有一組對邊互相平行的四邊形是？",["梯形","正方形","長方形","平行四邊形"],0,"梯形只有一組對邊互相平行。"],
+["math","分數","7/10 - 3/10 等於多少？",["4/10","4/20","10/10","3/10"],0,"同分母分數相減，分母不變，分子相減。"],
+["math","概數","把 7352 用四捨五入法取到千位，結果是多少？",["7000","7300","7400","8000"],0,"百位數是3，取到千位時捨去。"],
+["math","統計圖表","折線圖上的線往上升，通常表示數量如何變化？",["增加","減少","完全消失","無法比較"],0,"折線往上通常代表數量增加。"],
+["math","周長面積","正方形邊長6公分，周長是多少？",["12公分","24公分","36平方公分","6公分"],1,"正方形周長為邊長乘以4。"],
+["math","體積","用8個一立方公分的小正方體排成一個大正方體，體積是多少？",["4立方公分","8立方公分","16平方公分","24立方公分"],1,"每個小正方體是一立方公分，8個共8立方公分。"],
+["english","Unit 1 · Time","It's nine thirty. 表示幾點？",["九點三十分","九點十三分","三點九分","九點整"],0,"nine thirty 表示九點三十分。"],
+["english","Unit 1 · Time","你想詢問現在幾點，應該說什麼？",["What time is it?","Where are you?","What are you doing?","How old are you?"],0,"What time is it? 用來詢問時間。"],
+["english","Unit 2 · Actions","Which word means「正在畫畫」？",["drawing","cooking","sleeping","running"],0,"drawing 表示正在畫畫。"],
+["english","Unit 2 · Actions","I'm sleeping. 的意思是什麼？",["我正在睡覺。","我正在唱歌。","我正在吃飯。","我正在跑步。"],0,"sleeping 表示正在睡覺。"],
+["english","Unit 3 · Places","bedroom 是哪個地方？",["臥室","廚房","花園","教室"],0,"bedroom 是臥室。"],
+["english","Unit 3 · Places","你人在浴室，可以怎麼回答 Where are you?",["I'm in the bathroom.","I'm taking a bath.","It's in the bathroom.","It's seven."],0,"回答人的所在位置可用 I'm in the bathroom。"],
+["english","Unit 4 · Things","「帽子在椅子上」的英文是哪一句？",["The hat is on the chair.","The chair is on the hat.","The hat is under the chair.","I'm on the chair."],0,"on the chair 表示在椅子上。"],
+["english","Unit 4 · Things","哪個介系詞表示「在裡面」？",["in","on","under","at"],0,"in 表示在裡面。"],
+["social","家鄉交通","道路施工時設置告示牌，主要目的為何？",["提醒用路人注意安全","讓道路更擁擠","裝飾街道","增加行車速度"],0,"施工告示可提醒用路人避開危險。"],
+["social","消費與選擇","商品標示上的有效日期可以幫助消費者判斷什麼？",["商品是否適合使用或食用","商品顏色是否漂亮","商店距離多遠","廣告是否有趣"],0,"有效日期是選購食品與用品的重要資訊。"],
+["social","家鄉地名","哪一種資料最適合用來了解地名的由來？",["地方文史資料與長輩訪談","明天的功課表","商品價目表","體育比賽成績"],0,"文史資料與口述訪談可協助了解地名由來。"],
+["social","家鄉故事","參觀家鄉古蹟時，哪個行為最適當？",["遵守規定並愛護古蹟","在牆上刻名字","攀爬脆弱建築","帶走古物"],0,"古蹟是共同文化資產，應愛護並遵守規定。"],
+["social","家鄉產業","沿海地區常發展漁業，主要和哪項條件有關？",["鄰近海洋資源","學校數量","道路名稱","居民身高"],0,"產業發展常與當地自然資源有關。"],
+["social","公共生活","社區召開居民會議的主要作用是什麼？",["討論並解決公共問題","只讓一人決定所有事情","停止居民交流","販售私人商品"],0,"居民會議能讓大家共同討論公共事務。"],
+["social","消費與選擇","需要與想要有什麼不同？",["需要是生活必要，想要是希望擁有","兩者完全相同","想要一定比需要重要","需要都不能購買"],0,"分辨需要與想要有助做出適當消費選擇。"],
+["social","家鄉交通","搭乘公車時，哪個行為最適當？",["依序排隊並禮讓有需要的人","推擠上車","在車內奔跑","占用博愛座放物品"],0,"遵守搭乘禮儀能維護公共安全與秩序。"],
+["science","田園樂","植物的根主要有什麼功能？",["吸收水分並固定植物","製造聲音","幫助飛行","測量溫度"],0,"根能吸收水分和養分，也能固定植物。"],
+["science","田園樂","想比較不同日照時間對植物生長的影響，實驗時應該改變什麼？",["日照時間","所有條件一起改變","植物名稱和水量都不同","每天隨意處理"],0,"公平實驗一次只改變一項主要條件。"],
+["science","溫度與物質","水放入冷凍庫後變成冰，稱為什麼？",["凝固","融化","蒸發","沸騰"],0,"液態水變成固態冰是凝固。"],
+["science","溫度與物質","濕衣服曬在陽光下逐漸變乾，主要發生什麼現象？",["水分蒸發","水分凝固","衣服融化","空氣消失"],0,"液態水變成水蒸氣散入空氣中是蒸發。"],
+["science","動物解說員","鳥類的身體通常具有哪項特徵？",["身體有羽毛","都有六隻腳","身體分頭胸腹","都生活在水中"],0,"羽毛是鳥類的重要共同特徵。"],
+["science","動物解說員","動物的外形和構造通常與什麼有關？",["生活環境與生存方式","名字長短","被觀察的日期","課本頁數"],0,"外形構造常能幫助動物適應環境。"],
+["science","天氣與生活","天空中雲量增加且顏色變暗，可能表示什麼？",["可能即將下雨","一定是晴天","溫度一定零度","風完全停止"],0,"厚重暗雲常是降雨前的天氣現象。"],
+["science","天氣與生活","風向是指什麼？",["風吹來的方向","風停止的位置","雲的顏色","雨量大小"],0,"風向以風吹來的方向命名。"],
+["health","健康生活","要維持良好視力，哪個做法較適當？",["閱讀一段時間後讓眼睛休息","在黑暗中看書","長時間盯著螢幕","躺著看書"],0,"適時休息並保持適當光線有助保護視力。"],
+["health","安全觀念","發現同學在走廊奔跑，哪個處理方式較適當？",["提醒他放慢並注意安全","故意絆倒他","一起快速奔跑","完全不理會危險"],0,"走廊奔跑容易碰撞，應友善提醒。"],
+["health","運動知識","運動時若感到胸悶或頭暈，應該怎麼做？",["立即停止並告訴老師或大人","繼續勉強運動","躲起來不說","喝完飲料立刻衝刺"],0,"身體不適時應停止運動並尋求協助。"],
+["health","健康飲食","早餐對一天生活有什麼幫助？",["補充上午活動所需能量","讓晚上不用睡覺","取代所有飲水","讓人不必運動"],0,"適當早餐能提供上午活動所需能量。"],
+["health","身心健康","和朋友發生意見不同時，哪個做法較適當？",["冷靜說明並傾聽對方","大聲辱罵","拒絕溝通","散播對方祕密"],0,"溝通與傾聽有助解決衝突。"],
+["health","健康生活","預防傳染病，哪個習慣較適當？",["勤洗手並保持環境清潔","共用個人餐具","咳嗽時不遮掩","生病仍到處活動"],0,"手部清潔與環境衛生能降低傳播機會。"],
+["health","安全觀念","地震搖晃時，在教室內應優先怎麼做？",["趴下、掩護、穩住","立刻搭電梯","衝向窗邊","推擠同學"],0,"地震時先保護頭頸並趴下、掩護、穩住。"],
+["health","運動知識","運動結束後進行緩和活動有什麼作用？",["幫助身體逐漸恢復平靜","讓心跳立刻更快","取代所有休息","讓肌肉完全不動"],0,"緩和活動能讓呼吸與心跳逐漸恢復。"]
+].map(([s,u,q,o,a,e])=>({s,u,q,o,a,e})));
 let subject="",questions=[],answers=[],current=0,started=0;
 const $=id=>document.getElementById(id),letters=["A","B","C","D"],shuffle=a=>[...a].sort(()=>Math.random()-.5);
 function show(id){document.querySelectorAll(".screen").forEach(x=>x.classList.remove("active"));$(id).classList.add("active");window.scrollTo({top:0,behavior:"smooth"})}
 function renderSubjects(){$("subjects").innerHTML=Object.entries(subjects).map(([k,s])=>`<button class="subject" data-subject="${k}" style="--tone:${s.tone}"><span class="subject-icon">${s.icon}</span><h3>${s.name}</h3><p>${s.desc}</p><span class="publisher">${s.publisher}版</span></button>`).join("");document.querySelectorAll("[data-subject]").forEach(b=>b.onclick=()=>chooseSubject(b.dataset.subject))}
 function chooseSubject(key){subject=key;const s=subjects[key];$("choosePublisher").textContent=`${s.publisher}版 · 四年級下學期`;$("chooseTitle").textContent=`${s.name}練習`;$("chooseDesc").textContent=s.desc;const units=[...new Set(Q.filter(x=>x.s===key).map(x=>x.u))];$("units").innerHTML=`<button class="unit all" data-unit="all"><strong>綜合練習</strong><small>從所有單元隨機出題</small></button>`+units.map(u=>`<button class="unit" data-unit="${u}"><strong>${u}</strong><small>針對這個單元加強練習</small></button>`).join("");document.querySelectorAll("[data-unit]").forEach(b=>b.onclick=()=>start(b.dataset.unit));show("choose")}
-function start(unit,custom=null){questions=custom||shuffle(Q.filter(x=>x.s===subject&&(unit==="all"||x.u===unit))).slice(0,unit==="all"?8:6);answers=Array(questions.length).fill(null);current=0;started=Date.now();$("examPublisher").textContent=`${subjects[subject].publisher}版 · ${subjects[subject].name}`;$("examMode").textContent=custom?"錯題再練":unit==="all"?"綜合練習":unit;$("warning").hidden=true;show("exam");renderQuestion()}
+function start(unit,custom=null){questions=custom||shuffle(Q.filter(x=>x.s===subject&&(unit==="all"||x.u===unit))).slice(0,unit==="all"?12:10);answers=Array(questions.length).fill(null);current=0;started=Date.now();$("examPublisher").textContent=`${subjects[subject].publisher}版 · ${subjects[subject].name}`;$("examMode").textContent=custom?"錯題再練":unit==="all"?"綜合練習":unit;$("warning").hidden=true;show("exam");renderQuestion()}
 function renderNav(){const done=answers.filter(x=>x!==null).length;$("progressText").textContent=`${done} / ${questions.length}`;$("progressFill").style.width=`${done/questions.length*100}%`;$("nav").innerHTML=questions.map((_,i)=>`<button class="dot ${answers[i]!==null?"answered":""} ${i===current?"current":""}" data-i="${i}">${i+1}</button>`).join("");document.querySelectorAll("[data-i]").forEach(b=>b.onclick=()=>{current=+b.dataset.i;renderQuestion()})}
 function renderQuestion(){const x=questions[current];$("question").innerHTML=`<div class="qmeta"><span class="badge">${x.u}</span><span>第 ${current+1} 題，共 ${questions.length} 題</span></div><h2>${x.q}</h2><div class="options">${x.o.map((o,i)=>`<button class="option ${answers[current]===i?"selected":""}" data-choice="${i}"><span class="letter">${letters[i]}</span><span>${o}</span></button>`).join("")}</div><div class="actions"><button id="prev" class="secondary" ${current===0?"disabled":""}>← 上一題</button><button id="next" class="primary">${current===questions.length-1?"完成作答":"下一題 →"}</button></div>`;document.querySelectorAll("[data-choice]").forEach(b=>b.onclick=()=>{answers[current]=+b.dataset.choice;renderQuestion()});$("prev").onclick=()=>{if(current){current--;renderQuestion()}};$("next").onclick=()=>{if(current<questions.length-1){current++;renderQuestion()}else submit()};renderNav()}
 function submit(){const missing=answers.filter(x=>x===null).length;if(missing){$("warning").textContent=`還有 ${missing} 題未作答。`;$("warning").hidden=false;return}const correct=questions.filter((q,i)=>q.a===answers[i]).length,score=Math.round(correct/questions.length*100),secs=Math.max(1,Math.round((Date.now()-started)/1000));$("score").textContent=score;$("ring").style.setProperty("--score",`${score}%`);$("resultTitle").textContent=score>=90?"掌握得很穩！":score>=70?"訂正後會更好！":"先看解析，再練一次！";$("resultText").textContent=`答對 ${correct} 題，共 ${questions.length} 題。`;$("stats").innerHTML=`<div class="stat paper"><small>科目</small><strong>${subjects[subject].name}</strong></div><div class="stat paper"><small>答對題數</small><strong>${correct} / ${questions.length}</strong></div><div class="stat paper"><small>完成時間</small><strong>${Math.floor(secs/60)}分${secs%60}秒</strong></div>`;$("reviews").innerHTML=questions.map((q,i)=>{const ok=q.a===answers[i];return`<article class="review paper ${ok?"correct":""}"><h3>${ok?"答對":"需要訂正"}｜${q.q}</h3><p><strong>你的答案：</strong>${letters[answers[i]]} ${q.o[answers[i]]}</p>${ok?"":`<p><strong>正確答案：</strong>${letters[q.a]} ${q.o[q.a]}</p>`}<p class="explain">${q.e}</p></article>`}).join("");$("retry").hidden=correct===questions.length;show("result")}
